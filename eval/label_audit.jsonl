@@ -1,0 +1,60 @@
+{"id": "q001", "difficulty": "easy", "verdict": "agree"}
+{"id": "q002", "difficulty": "easy", "verdict": "agree"}
+{"id": "q003", "difficulty": "easy", "verdict": "agree"}
+{"id": "q004", "difficulty": "easy", "verdict": "agree"}
+{"id": "q005", "difficulty": "easy", "verdict": "agree"}
+{"id": "q006", "difficulty": "easy", "verdict": "agree"}
+{"id": "q007", "difficulty": "easy", "verdict": "adjudicated", "kind": "label", "note": "'Paid in cash' conflated order payment_mode with captured payments; cancelled COD orders fail settlement. Question reworded to placement-time payment mode."}
+{"id": "q008", "difficulty": "easy", "verdict": "adjudicated", "kind": "label", "note": "Seed gives some open tickets a stale resolved_at, so 'open' and 'never resolved' were different populations. Label redefined to resolved_at IS NULL."}
+{"id": "q009", "difficulty": "easy", "verdict": "agree"}
+{"id": "q010", "difficulty": "easy", "verdict": "agree"}
+{"id": "q011", "difficulty": "easy", "verdict": "adjudicated", "kind": "verification", "note": "Second formulation guessed at the flag formula from zone ids instead of reading it; replaced with an equivalent boolean aggregation."}
+{"id": "q012", "difficulty": "easy", "verdict": "agree"}
+{"id": "q013", "difficulty": "easy", "verdict": "agree"}
+{"id": "q014", "difficulty": "easy", "verdict": "agree"}
+{"id": "q015", "difficulty": "easy", "verdict": "agree"}
+{"id": "q016", "difficulty": "medium", "verdict": "agree"}
+{"id": "q017", "difficulty": "medium", "verdict": "agree"}
+{"id": "q018", "difficulty": "medium", "verdict": "agree"}
+{"id": "q019", "difficulty": "medium", "verdict": "agree"}
+{"id": "q020", "difficulty": "medium", "verdict": "agree"}
+{"id": "q021", "difficulty": "medium", "verdict": "agree"}
+{"id": "q022", "difficulty": "medium", "verdict": "adjudicated", "kind": "verification", "note": "Original verify joined payments to a fails subquery ON false, returning zeros. Rewritten with lateral counts per method."}
+{"id": "q023", "difficulty": "medium", "verdict": "agree"}
+{"id": "q024", "difficulty": "medium", "verdict": "agree"}
+{"id": "q025", "difficulty": "medium", "verdict": "agree"}
+{"id": "q026", "difficulty": "medium", "verdict": "adjudicated", "kind": "label", "note": "No resolved ticket carries a CSAT score under the seed rules, so the two-row comparison silently compared one row against two. Gold now filters empty groups explicitly."}
+{"id": "q027", "difficulty": "medium", "verdict": "agree"}
+{"id": "q028", "difficulty": "medium", "verdict": "adjudicated", "kind": "verification", "note": "UNION ALL of two SELECTs is read-shaped; guard taught to allow it, verify kept."}
+{"id": "q029", "difficulty": "medium", "verdict": "agree"}
+{"id": "q030", "difficulty": "medium", "verdict": "agree"}
+{"id": "q031", "difficulty": "medium", "verdict": "agree"}
+{"id": "q032", "difficulty": "medium", "verdict": "agree"}
+{"id": "q033", "difficulty": "medium", "verdict": "agree"}
+{"id": "q034", "difficulty": "hard", "verdict": "adjudicated", "kind": "verification", "note": "Ties between months picked different winners depending on plan. Added month ASC tiebreakers to both formulations."}
+{"id": "q035", "difficulty": "hard", "verdict": "adjudicated", "kind": "verification", "note": "Boolean versus word labels ('False'/'rain') and slightly different null filters. Unified on named labels."}
+{"id": "q036", "difficulty": "hard", "verdict": "adjudicated", "kind": "verification", "note": "Verify computed average per city-day where gold sums total GMV; also boolean text casing. Rewrote as a join against a flags list."}
+{"id": "q037", "difficulty": "hard", "verdict": "agree"}
+{"id": "q038", "difficulty": "hard", "verdict": "agree"}
+{"id": "q039", "difficulty": "hard", "verdict": "agree"}
+{"id": "q040", "difficulty": "hard", "verdict": "adjudicated", "kind": "verification", "note": "ratings has no restaurant_id; original join never ran. Rerouted through orders, rounding aligned."}
+{"id": "q041", "difficulty": "hard", "verdict": "agree"}
+{"id": "q042", "difficulty": "hard", "verdict": "adjudicated", "kind": "label", "note": "'Menu items' was ambiguous about availability; denominator differed between formulations. Question pinned to available items."}
+{"id": "q043", "difficulty": "hard", "verdict": "agree"}
+{"id": "q044", "difficulty": "hard", "verdict": "agree"}
+{"id": "q045", "difficulty": "hard", "verdict": "agree"}
+{"id": "q046", "difficulty": "hard", "verdict": "agree"}
+{"id": "q047", "difficulty": "hard", "verdict": "adjudicated", "kind": "verification", "note": "max() ties across cities made LIMIT 1 nondeterministic; city and month tiebreakers added."}
+{"id": "q048", "difficulty": "hard", "verdict": "agree"}
+{"id": "q049", "difficulty": "hard", "verdict": "agree"}
+{"id": "q050", "difficulty": "hard", "verdict": "adjudicated", "kind": "verification", "note": "Verify projected extra columns so row shapes disagreed despite equal shares. Projected to the same shape."}
+{"id": "q051", "difficulty": "hard", "verdict": "agree"}
+{"id": "q052", "difficulty": "hard", "verdict": "agree"}
+{"id": "q053", "difficulty": "hard", "verdict": "adjudicated", "kind": "verification", "note": "Several months share the worst cancel rate; rank needed a month DESC tiebreaker, and the first rewrite grouped wrongly."}
+{"id": "q054", "difficulty": "hard", "verdict": "agree"}
+{"id": "q055", "difficulty": "hard", "verdict": "adjudicated", "kind": "verification", "note": "Same UNION root-shape issue as q028; guard updated rather than the query."}
+{"id": "q056", "difficulty": "hard", "verdict": "agree"}
+{"id": "q057", "difficulty": "hard", "verdict": "adjudicated", "kind": "verification", "note": "Same UNION root-shape issue as q028; guard updated rather than the query."}
+{"id": "q058", "difficulty": "hard", "verdict": "adjudicated", "kind": "verification", "note": "Quarter labels rendered as text versus timestamps. Verify now derives quarter starts as timestamptz."}
+{"id": "q059", "difficulty": "hard", "verdict": "agree"}
+{"id": "q060", "difficulty": "hard", "verdict": "agree"}

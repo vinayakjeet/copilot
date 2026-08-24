@@ -1,0 +1,51 @@
+[project]
+name = "copilot"
+version = "0.1.0"
+description = "Streaming NL to SQL analyst: preview-and-approve before execution, a defense-in-depth safety suite, and an eval set with a published label-audit pass."
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "psycopg[binary]>=3.2",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+    "pydantic-settings>=2.6",
+    "structlog>=24.4",
+    "httpx>=0.27",
+    "tenacity>=9.0",
+    "openai>=1.60",
+    "sqlglot>=26.0",
+    "opentelemetry-sdk>=1.28",
+    "opentelemetry-exporter-otlp-proto-http>=1.28",
+    "python-dotenv>=1.2.2",
+    "psycopg-pool>=3.2",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "pytest-asyncio>=0.24",
+    "ruff>=0.7",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+markers = [
+    "integration: needs the live warehouse, skipped without COPILOT_RO_URL",
+]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+# The adjudication notes are prose records; wrapping them mid-sentence costs
+# more than a wide line does.
+"eval/audit.py" = ["E501"]

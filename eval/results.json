@@ -1,0 +1,938 @@
+{
+  "measured_at": "2026-08-24T20:07:08+00:00",
+  "model": "groq/openai/gpt-oss-20b",
+  "runs": 3,
+  "n_questions": 60,
+  "accuracy_mean": 0.2722,
+  "accuracy_stdev": 0.0096,
+  "per_run_accuracy": [
+    0.2667,
+    0.2833,
+    0.2667
+  ],
+  "failure_kinds": {
+    "wrong_rows": 122,
+    "provider_error": 3,
+    "exec_error": 3,
+    "policy_blocked": 3
+  },
+  "raw_label_accuracy": 0.25,
+  "corrected_label_accuracy": 0.2722,
+  "outcomes": [
+    [
+      {
+        "id": "q001",
+        "outcome": "pass",
+        "latency_ms": 3533.8
+      },
+      {
+        "id": "q002",
+        "outcome": "pass",
+        "latency_ms": 712.5
+      },
+      {
+        "id": "q003",
+        "outcome": "pass",
+        "latency_ms": 542.6
+      },
+      {
+        "id": "q004",
+        "outcome": "pass",
+        "latency_ms": 793.9
+      },
+      {
+        "id": "q005",
+        "outcome": "pass",
+        "latency_ms": 845.5
+      },
+      {
+        "id": "q006",
+        "outcome": "wrong_rows",
+        "latency_ms": 519.3
+      },
+      {
+        "id": "q007",
+        "outcome": "wrong_rows",
+        "latency_ms": 570.4
+      },
+      {
+        "id": "q008",
+        "outcome": "wrong_rows",
+        "latency_ms": 573.2
+      },
+      {
+        "id": "q009",
+        "outcome": "pass",
+        "latency_ms": 573.1
+      },
+      {
+        "id": "q010",
+        "outcome": "pass",
+        "latency_ms": 790.7
+      },
+      {
+        "id": "q011",
+        "outcome": "pass",
+        "latency_ms": 690.3
+      },
+      {
+        "id": "q012",
+        "outcome": "wrong_rows",
+        "latency_ms": 644.0
+      },
+      {
+        "id": "q013",
+        "outcome": "pass",
+        "latency_ms": 334.1
+      },
+      {
+        "id": "q014",
+        "outcome": "wrong_rows",
+        "latency_ms": 525.5
+      },
+      {
+        "id": "q015",
+        "outcome": "pass",
+        "latency_ms": 1170.0
+      },
+      {
+        "id": "q016",
+        "outcome": "wrong_rows",
+        "latency_ms": 824.2
+      },
+      {
+        "id": "q017",
+        "outcome": "pass",
+        "latency_ms": 922.5
+      },
+      {
+        "id": "q018",
+        "outcome": "wrong_rows",
+        "latency_ms": 798.7
+      },
+      {
+        "id": "q019",
+        "outcome": "wrong_rows",
+        "latency_ms": 695.1
+      },
+      {
+        "id": "q020",
+        "outcome": "pass",
+        "latency_ms": 1062.7
+      },
+      {
+        "id": "q021",
+        "outcome": "wrong_rows",
+        "latency_ms": 841.9
+      },
+      {
+        "id": "q022",
+        "outcome": "wrong_rows",
+        "latency_ms": 973.4
+      },
+      {
+        "id": "q023",
+        "outcome": "wrong_rows",
+        "latency_ms": 3654.1
+      },
+      {
+        "id": "q024",
+        "outcome": "wrong_rows",
+        "latency_ms": 4835.1
+      },
+      {
+        "id": "q025",
+        "outcome": "wrong_rows",
+        "latency_ms": 4511.3
+      },
+      {
+        "id": "q026",
+        "outcome": "wrong_rows",
+        "latency_ms": 4773.1
+      },
+      {
+        "id": "q027",
+        "outcome": "pass",
+        "latency_ms": 4711.0
+      },
+      {
+        "id": "q028",
+        "outcome": "wrong_rows",
+        "latency_ms": 4064.9
+      },
+      {
+        "id": "q029",
+        "outcome": "wrong_rows",
+        "latency_ms": 2753.3
+      },
+      {
+        "id": "q030",
+        "outcome": "wrong_rows",
+        "latency_ms": 3858.9
+      },
+      {
+        "id": "q031",
+        "outcome": "wrong_rows",
+        "latency_ms": 5005.5
+      },
+      {
+        "id": "q032",
+        "outcome": "wrong_rows",
+        "latency_ms": 6043.7
+      },
+      {
+        "id": "q033",
+        "outcome": "wrong_rows",
+        "latency_ms": 5823.8
+      },
+      {
+        "id": "q034",
+        "outcome": "wrong_rows",
+        "latency_ms": 6965.6
+      },
+      {
+        "id": "q035",
+        "outcome": "wrong_rows",
+        "latency_ms": 6797.5
+      },
+      {
+        "id": "q036",
+        "outcome": "wrong_rows",
+        "latency_ms": 4994.4
+      },
+      {
+        "id": "q037",
+        "outcome": "provider_error",
+        "detail": "empty completion from provider"
+      },
+      {
+        "id": "q038",
+        "outcome": "wrong_rows",
+        "latency_ms": 19505.7
+      },
+      {
+        "id": "q039",
+        "outcome": "wrong_rows",
+        "latency_ms": 7291.1
+      },
+      {
+        "id": "q040",
+        "outcome": "exec_error",
+        "detail": "42703: column ra.restaurant_id does not exist\nLINE 3: JOIN warehouse.ratings ra ON ra.restaurant_id = r.restaurant...\n         ",
+        "latency_ms": 8914.1
+      },
+      {
+        "id": "q041",
+        "outcome": "wrong_rows",
+        "latency_ms": 8251.4
+      },
+      {
+        "id": "q042",
+        "outcome": "wrong_rows",
+        "latency_ms": 4887.3
+      },
+      {
+        "id": "q043",
+        "outcome": "wrong_rows",
+        "latency_ms": 1162.9
+      },
+      {
+        "id": "q044",
+        "outcome": "pass",
+        "latency_ms": 439.0
+      },
+      {
+        "id": "q045",
+        "outcome": "wrong_rows",
+        "latency_ms": 1003.1
+      },
+      {
+        "id": "q046",
+        "outcome": "wrong_rows",
+        "latency_ms": 13202.5
+      },
+      {
+        "id": "q047",
+        "outcome": "wrong_rows",
+        "latency_ms": 6014.5
+      },
+      {
+        "id": "q048",
+        "outcome": "wrong_rows",
+        "latency_ms": 6964.8
+      },
+      {
+        "id": "q049",
+        "outcome": "pass",
+        "latency_ms": 776.7
+      },
+      {
+        "id": "q050",
+        "outcome": "wrong_rows",
+        "latency_ms": 9921.9
+      },
+      {
+        "id": "q051",
+        "outcome": "wrong_rows",
+        "latency_ms": 630.3
+      },
+      {
+        "id": "q052",
+        "outcome": "wrong_rows",
+        "latency_ms": 714.0
+      },
+      {
+        "id": "q053",
+        "outcome": "wrong_rows",
+        "latency_ms": 1897.0
+      },
+      {
+        "id": "q054",
+        "outcome": "pass",
+        "latency_ms": 8830.5
+      },
+      {
+        "id": "q055",
+        "outcome": "wrong_rows",
+        "latency_ms": 2843.4
+      },
+      {
+        "id": "q056",
+        "outcome": "wrong_rows",
+        "latency_ms": 1048.6
+      },
+      {
+        "id": "q057",
+        "outcome": "wrong_rows",
+        "latency_ms": 12072.0
+      },
+      {
+        "id": "q058",
+        "outcome": "wrong_rows",
+        "latency_ms": 1198.8
+      },
+      {
+        "id": "q059",
+        "outcome": "wrong_rows",
+        "latency_ms": 1271.5
+      },
+      {
+        "id": "q060",
+        "outcome": "wrong_rows",
+        "latency_ms": 8643.7
+      }
+    ],
+    [
+      {
+        "id": "q001",
+        "outcome": "pass",
+        "latency_ms": 12846.7
+      },
+      {
+        "id": "q002",
+        "outcome": "pass",
+        "latency_ms": 556.2
+      },
+      {
+        "id": "q003",
+        "outcome": "pass",
+        "latency_ms": 2743.7
+      },
+      {
+        "id": "q004",
+        "outcome": "pass",
+        "latency_ms": 766.3
+      },
+      {
+        "id": "q005",
+        "outcome": "pass",
+        "latency_ms": 1212.8
+      },
+      {
+        "id": "q006",
+        "outcome": "wrong_rows",
+        "latency_ms": 9696.2
+      },
+      {
+        "id": "q007",
+        "outcome": "wrong_rows",
+        "latency_ms": 6017.9
+      },
+      {
+        "id": "q008",
+        "outcome": "wrong_rows",
+        "latency_ms": 473.4
+      },
+      {
+        "id": "q009",
+        "outcome": "pass",
+        "latency_ms": 3662.7
+      },
+      {
+        "id": "q010",
+        "outcome": "pass",
+        "latency_ms": 4737.6
+      },
+      {
+        "id": "q011",
+        "outcome": "pass",
+        "latency_ms": 2631.6
+      },
+      {
+        "id": "q012",
+        "outcome": "wrong_rows",
+        "latency_ms": 4631.7
+      },
+      {
+        "id": "q013",
+        "outcome": "pass",
+        "latency_ms": 5454.6
+      },
+      {
+        "id": "q014",
+        "outcome": "wrong_rows",
+        "latency_ms": 9625.0
+      },
+      {
+        "id": "q015",
+        "outcome": "pass",
+        "latency_ms": 2641.8
+      },
+      {
+        "id": "q016",
+        "outcome": "wrong_rows",
+        "latency_ms": 781.6
+      },
+      {
+        "id": "q017",
+        "outcome": "pass",
+        "latency_ms": 860.7
+      },
+      {
+        "id": "q018",
+        "outcome": "wrong_rows",
+        "latency_ms": 5059.4
+      },
+      {
+        "id": "q019",
+        "outcome": "wrong_rows",
+        "latency_ms": 792.1
+      },
+      {
+        "id": "q020",
+        "outcome": "pass",
+        "latency_ms": 5839.5
+      },
+      {
+        "id": "q021",
+        "outcome": "wrong_rows",
+        "latency_ms": 4963.7
+      },
+      {
+        "id": "q022",
+        "outcome": "wrong_rows",
+        "latency_ms": 13084.4
+      },
+      {
+        "id": "q023",
+        "outcome": "wrong_rows",
+        "latency_ms": 343.5
+      },
+      {
+        "id": "q024",
+        "outcome": "wrong_rows",
+        "latency_ms": 7874.9
+      },
+      {
+        "id": "q025",
+        "outcome": "wrong_rows",
+        "latency_ms": 5764.3
+      },
+      {
+        "id": "q026",
+        "outcome": "wrong_rows",
+        "latency_ms": 5728.7
+      },
+      {
+        "id": "q027",
+        "outcome": "pass",
+        "latency_ms": 3753.8
+      },
+      {
+        "id": "q028",
+        "outcome": "wrong_rows",
+        "latency_ms": 995.0
+      },
+      {
+        "id": "q029",
+        "outcome": "wrong_rows",
+        "latency_ms": 6828.8
+      },
+      {
+        "id": "q030",
+        "outcome": "wrong_rows",
+        "latency_ms": 647.4
+      },
+      {
+        "id": "q031",
+        "outcome": "wrong_rows",
+        "latency_ms": 5170.7
+      },
+      {
+        "id": "q032",
+        "outcome": "wrong_rows",
+        "latency_ms": 678.5
+      },
+      {
+        "id": "q033",
+        "outcome": "wrong_rows",
+        "latency_ms": 509.1
+      },
+      {
+        "id": "q034",
+        "outcome": "wrong_rows",
+        "latency_ms": 14171.4
+      },
+      {
+        "id": "q035",
+        "outcome": "wrong_rows",
+        "latency_ms": 1326.8
+      },
+      {
+        "id": "q036",
+        "outcome": "wrong_rows",
+        "latency_ms": 775.7
+      },
+      {
+        "id": "q037",
+        "outcome": "provider_error",
+        "detail": "empty completion from provider"
+      },
+      {
+        "id": "q038",
+        "outcome": "policy_blocked",
+        "reason": "unparseable: ParseError",
+        "statement": "WITH weekly AS (\n  SELECT date_trunc('week', placed_at)::date AS week_start,\n         count(*) AS order_count\n  FROM warehouse.orders\n  WHERE placed_at >= '2026-06-20'\n  GROUP BY week_start\n)\nSELECT w",
+        "latency_ms": 23301.8
+      },
+      {
+        "id": "q039",
+        "outcome": "wrong_rows",
+        "latency_ms": 7504.6
+      },
+      {
+        "id": "q040",
+        "outcome": "exec_error",
+        "detail": "42703: column ra.restaurant_id does not exist\nLINE 3: JOIN warehouse.ratings ra ON ra.restaurant_id = r.restaurant...\n         ",
+        "latency_ms": 5857.6
+      },
+      {
+        "id": "q041",
+        "outcome": "wrong_rows",
+        "latency_ms": 8082.9
+      },
+      {
+        "id": "q042",
+        "outcome": "wrong_rows",
+        "latency_ms": 6882.0
+      },
+      {
+        "id": "q043",
+        "outcome": "wrong_rows",
+        "latency_ms": 6277.0
+      },
+      {
+        "id": "q044",
+        "outcome": "pass",
+        "latency_ms": 4655.1
+      },
+      {
+        "id": "q045",
+        "outcome": "wrong_rows",
+        "latency_ms": 2950.9
+      },
+      {
+        "id": "q046",
+        "outcome": "wrong_rows",
+        "latency_ms": 7050.5
+      },
+      {
+        "id": "q047",
+        "outcome": "wrong_rows",
+        "latency_ms": 5450.9
+      },
+      {
+        "id": "q048",
+        "outcome": "wrong_rows",
+        "latency_ms": 6156.7
+      },
+      {
+        "id": "q049",
+        "outcome": "pass",
+        "latency_ms": 14032.0
+      },
+      {
+        "id": "q050",
+        "outcome": "wrong_rows",
+        "latency_ms": 697.1
+      },
+      {
+        "id": "q051",
+        "outcome": "pass",
+        "latency_ms": 4918.4
+      },
+      {
+        "id": "q052",
+        "outcome": "wrong_rows",
+        "latency_ms": 9703.8
+      },
+      {
+        "id": "q053",
+        "outcome": "wrong_rows",
+        "latency_ms": 805.8
+      },
+      {
+        "id": "q054",
+        "outcome": "pass",
+        "latency_ms": 639.2
+      },
+      {
+        "id": "q055",
+        "outcome": "wrong_rows",
+        "latency_ms": 791.9
+      },
+      {
+        "id": "q056",
+        "outcome": "wrong_rows",
+        "latency_ms": 6144.4
+      },
+      {
+        "id": "q057",
+        "outcome": "wrong_rows",
+        "latency_ms": 13441.4
+      },
+      {
+        "id": "q058",
+        "outcome": "wrong_rows",
+        "latency_ms": 1974.7
+      },
+      {
+        "id": "q059",
+        "outcome": "policy_blocked",
+        "reason": "unparseable: ParseError",
+        "statement": "SELECT c.city_name,\n       AVG(CASE WHEN d.rain_flag THEN d.cancel_rate END) AS avg_cancel_rate_rainy,\n       AVG(CASE WHEN NOT d.rain_flag THEN d.cancel_rate END) AS avg_cancel_rate_non_rainy,\n      ",
+        "latency_ms": 5347.0
+      },
+      {
+        "id": "q060",
+        "outcome": "policy_blocked",
+        "reason": "policy function(s): current_setting",
+        "statement": "WITH monthly AS (\n  SELECT oi.restaurant_id,\n         SUM(oi.line_total_inr) AS total_items\n  FROM warehouse.order_items oi\n  JOIN warehouse.orders o ON oi.order_id = o.order_id\n  WHERE o.placed_at >=",
+        "latency_ms": 11557.1
+      }
+    ],
+    [
+      {
+        "id": "q001",
+        "outcome": "pass",
+        "latency_ms": 5793.4
+      },
+      {
+        "id": "q002",
+        "outcome": "pass",
+        "latency_ms": 1384.3
+      },
+      {
+        "id": "q003",
+        "outcome": "pass",
+        "latency_ms": 12812.3
+      },
+      {
+        "id": "q004",
+        "outcome": "pass",
+        "latency_ms": 2607.3
+      },
+      {
+        "id": "q005",
+        "outcome": "pass",
+        "latency_ms": 1228.1
+      },
+      {
+        "id": "q006",
+        "outcome": "wrong_rows",
+        "latency_ms": 1699.8
+      },
+      {
+        "id": "q007",
+        "outcome": "wrong_rows",
+        "latency_ms": 556.5
+      },
+      {
+        "id": "q008",
+        "outcome": "wrong_rows",
+        "latency_ms": 9560.1
+      },
+      {
+        "id": "q009",
+        "outcome": "pass",
+        "latency_ms": 521.8
+      },
+      {
+        "id": "q010",
+        "outcome": "pass",
+        "latency_ms": 612.3
+      },
+      {
+        "id": "q011",
+        "outcome": "pass",
+        "latency_ms": 623.9
+      },
+      {
+        "id": "q012",
+        "outcome": "wrong_rows",
+        "latency_ms": 6712.8
+      },
+      {
+        "id": "q013",
+        "outcome": "pass",
+        "latency_ms": 725.7
+      },
+      {
+        "id": "q014",
+        "outcome": "wrong_rows",
+        "latency_ms": 7629.9
+      },
+      {
+        "id": "q015",
+        "outcome": "pass",
+        "latency_ms": 535.5
+      },
+      {
+        "id": "q016",
+        "outcome": "wrong_rows",
+        "latency_ms": 2559.9
+      },
+      {
+        "id": "q017",
+        "outcome": "pass",
+        "latency_ms": 906.2
+      },
+      {
+        "id": "q018",
+        "outcome": "wrong_rows",
+        "latency_ms": 789.7
+      },
+      {
+        "id": "q019",
+        "outcome": "wrong_rows",
+        "latency_ms": 725.3
+      },
+      {
+        "id": "q020",
+        "outcome": "pass",
+        "latency_ms": 1213.7
+      },
+      {
+        "id": "q021",
+        "outcome": "wrong_rows",
+        "latency_ms": 863.7
+      },
+      {
+        "id": "q022",
+        "outcome": "wrong_rows",
+        "latency_ms": 2197.8
+      },
+      {
+        "id": "q023",
+        "outcome": "wrong_rows",
+        "latency_ms": 6636.9
+      },
+      {
+        "id": "q024",
+        "outcome": "wrong_rows",
+        "latency_ms": 857.1
+      },
+      {
+        "id": "q025",
+        "outcome": "wrong_rows",
+        "latency_ms": 8915.2
+      },
+      {
+        "id": "q026",
+        "outcome": "wrong_rows",
+        "latency_ms": 611.4
+      },
+      {
+        "id": "q027",
+        "outcome": "pass",
+        "latency_ms": 3652.0
+      },
+      {
+        "id": "q028",
+        "outcome": "wrong_rows",
+        "latency_ms": 865.6
+      },
+      {
+        "id": "q029",
+        "outcome": "wrong_rows",
+        "latency_ms": 4972.2
+      },
+      {
+        "id": "q030",
+        "outcome": "wrong_rows",
+        "latency_ms": 3515.8
+      },
+      {
+        "id": "q031",
+        "outcome": "wrong_rows",
+        "latency_ms": 895.4
+      },
+      {
+        "id": "q032",
+        "outcome": "wrong_rows",
+        "latency_ms": 9197.6
+      },
+      {
+        "id": "q033",
+        "outcome": "wrong_rows",
+        "latency_ms": 755.8
+      },
+      {
+        "id": "q034",
+        "outcome": "wrong_rows",
+        "latency_ms": 1178.8
+      },
+      {
+        "id": "q035",
+        "outcome": "wrong_rows",
+        "latency_ms": 3089.1
+      },
+      {
+        "id": "q036",
+        "outcome": "wrong_rows",
+        "latency_ms": 1778.9
+      },
+      {
+        "id": "q037",
+        "outcome": "provider_error",
+        "detail": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01ks832p47e9raxa0zzrgada1e` service ti"
+      },
+      {
+        "id": "q038",
+        "outcome": "wrong_rows",
+        "latency_ms": 7354.2
+      },
+      {
+        "id": "q039",
+        "outcome": "wrong_rows",
+        "latency_ms": 7233.1
+      },
+      {
+        "id": "q040",
+        "outcome": "exec_error",
+        "detail": "42703: column \"restaurant_id\" does not exist\nLINE 2:   SELECT restaurant_id, AVG(restaurant_rating) AS avg_guest_...\n          ",
+        "latency_ms": 9526.9
+      },
+      {
+        "id": "q041",
+        "outcome": "wrong_rows",
+        "latency_ms": 7246.5
+      },
+      {
+        "id": "q042",
+        "outcome": "wrong_rows",
+        "latency_ms": 6904.2
+      },
+      {
+        "id": "q043",
+        "outcome": "wrong_rows",
+        "latency_ms": 5349.5
+      },
+      {
+        "id": "q044",
+        "outcome": "pass",
+        "latency_ms": 4695.4
+      },
+      {
+        "id": "q045",
+        "outcome": "wrong_rows",
+        "latency_ms": 833.1
+      },
+      {
+        "id": "q046",
+        "outcome": "wrong_rows",
+        "latency_ms": 6853.3
+      },
+      {
+        "id": "q047",
+        "outcome": "wrong_rows",
+        "latency_ms": 1225.8
+      },
+      {
+        "id": "q048",
+        "outcome": "wrong_rows",
+        "latency_ms": 7073.5
+      },
+      {
+        "id": "q049",
+        "outcome": "pass",
+        "latency_ms": 6741.6
+      },
+      {
+        "id": "q050",
+        "outcome": "wrong_rows",
+        "latency_ms": 3880.9
+      },
+      {
+        "id": "q051",
+        "outcome": "wrong_rows",
+        "latency_ms": 7056.7
+      },
+      {
+        "id": "q052",
+        "outcome": "wrong_rows",
+        "latency_ms": 878.6
+      },
+      {
+        "id": "q053",
+        "outcome": "wrong_rows",
+        "latency_ms": 1255.9
+      },
+      {
+        "id": "q054",
+        "outcome": "pass",
+        "latency_ms": 646.0
+      },
+      {
+        "id": "q055",
+        "outcome": "wrong_rows",
+        "latency_ms": 645.0
+      },
+      {
+        "id": "q056",
+        "outcome": "wrong_rows",
+        "latency_ms": 2923.1
+      },
+      {
+        "id": "q057",
+        "outcome": "wrong_rows",
+        "latency_ms": 6891.4
+      },
+      {
+        "id": "q058",
+        "outcome": "wrong_rows",
+        "latency_ms": 9059.8
+      },
+      {
+        "id": "q059",
+        "outcome": "wrong_rows",
+        "latency_ms": 5199.5
+      },
+      {
+        "id": "q060",
+        "outcome": "wrong_rows",
+        "latency_ms": 4346.8
+      }
+    ]
+  ]
+}

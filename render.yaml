@@ -1,0 +1,26 @@
+# Render free tier. The service sleeps when idle; the first request after a
+# quiet period pays a boot measured in tens of seconds, and the app reports
+# that honestly through /api/status rather than hiding it behind a spinner.
+services:
+  - type: web
+    name: copilot
+    runtime: python
+    plan: free
+    buildCommand: pip install uv && uv sync --frozen --no-dev
+    # Call the interpreter the build produced rather than going through `uv run`.
+    # `uv run` re-resolves before executing, which on a cold container blows
+    # past Render's port-scan window.
+    startCommand: .venv/bin/python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /healthz
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.13.2"
+      - key: ENVIRONMENT
+        value: production
+      # Set in the Render dashboard, never committed:
+      #   COPILOT_RO_URL   the read-only role DSN (never the owner URL)
+      #   TOLLGATE_URL     or COPILOT_LLM_PROVIDER=groq + GROQ_API_KEY for direct
+      - key: COPILOT_RO_URL
+        sync: false
+      - key: TOLLGATE_URL
+        sync: false
